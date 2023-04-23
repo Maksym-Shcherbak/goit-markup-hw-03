@@ -8,6 +8,7 @@
     --light: rgba(244, 244, 253, 1);
     --white-background: rgba(255, 255, 255, 1);
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -17,10 +18,29 @@ body {
     letter-spacing: 0.02em;
     color: var(--text);
     background-color: var(--white-background);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .container {
-    width: 1158px;
+    width: 1128px;
+    margin: 0 auto;
 }
 
 .section {
@@ -38,6 +58,43 @@ body {
 
 .site-header {
     border-bottom: solid 1px var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header.container {
+    padding: 24px 0;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+}
+
+.menu-item {
+    margin-right: 40px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contact-item {
+    margin-right: 40px;
+}
+
+.contact-item:last-child {
+    margin-right: 0;
 }
 
 .logo {
@@ -49,6 +106,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color);
+    margin-right: 76px;
 }
 
 .header-span {
@@ -97,11 +155,13 @@ body {
 }
 
 .order-title {
+    width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--white-background);
+    margin: 68px auto 48px;
     text-align: center;
 }
 
@@ -125,12 +185,38 @@ body {
     cursor: pointer;
 }
 
+
+.features {
+    display: flex;
+}
+
+.feature {
+    margin-right: 24px;
+}
+
+.feature:last-child {
+    margin-right: 0;
+}
+
 .feature-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.jobs {
+    display: flex;
+}
+
+.job {
+    margin-right: 24px;
+}
+
+.job:last-child {
+    margin-right: 0;
 }
 
 .our-job-title {
@@ -141,10 +227,16 @@ body {
     text-transform: capitalize;
     color: var(--dark);
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .our-team {
     background-color: var(--light);
+}
+
+.all-team {
+    display: flex;
+    gap: 24px;
 }
 
 .our-team-title {
@@ -155,17 +247,27 @@ body {
     text-transform: capitalize;
     color: var(--dark);
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .team-member {
     background-color: var(--white-background);
+    padding-bottom: 32px;
+    
+    text-align: center;
 }
+
+.team-member:last-child {
+    margin-right: 0;
+}
+
 .team-member-vacation {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+    margin: 32px 0 8px;
 }
 
 .site-footer {
@@ -177,10 +279,31 @@ body {
     color: var(--light);
 }
 
+.site-footer.container {
+    padding: 100px 0;
+}
+
+.footer-text {
+    width: 264px;
+    margin-top: 16px;
+}
+
 
 
 
 /*Style for page Portfolio*/
+
+.our-projects {
+    padding-top: 96px;
+}
+
+.filters {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
 
 .filter-button {
     background-color: var(--light);
@@ -190,12 +313,26 @@ body {
     font-weight: 500;
     letter-spacing: 0.04em;
     color: var(--brand-color);
+    padding: 12px 24px;
 }
 
 .filter-button:hover, .filter-button:focus {
     background-color: var(--pressed-state);
     color: var(--white-background);
     cursor: pointer;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    justify-content: center;
+}
+
+.project {
+    flex-basis: calc(100%/3 - 48px);
+    border: 1px solid var(--accent);
 }
 
 .project-title {
@@ -205,6 +342,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--dark);
     text-transform: capitalize;
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .project-name {
@@ -215,6 +355,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
+    margin-bottom: 32px;
+    margin-left: 16px;
 }
 
 
