@@ -39,8 +39,9 @@ img {
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section {
@@ -63,10 +64,6 @@ img {
     justify-content: space-between;
 }
 
-.site-header.container {
-    padding: 24px 0;
-}
-
 .header-navigation {
     display: flex;
     align-items: center;
@@ -79,6 +76,7 @@ img {
 
 .menu-item {
     margin-right: 40px;
+    padding: 24px 0;
 }
 
 .menu-item:last-child {
@@ -152,24 +150,26 @@ img {
 
 .order {
     background-color: var(--dark);
+    padding: 188px 0;
 }
 
 .order-title {
-    width: 496px;
+   max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--white-background);
-    margin: 68px auto 48px;
+    margin: 0 auto 48px;
     text-align: center;
 }
 
 .order-button {
-    width: 170px;
-    height: 55px;
+    min-width: 170px;
+    height: 56px;
     background-color: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -178,19 +178,21 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-background);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 .order-button:hover, .order-button:focus {
     background-color: var(--pressed-state);
-    cursor: pointer;
 }
-
 
 .features {
     display: flex;
 }
 
 .feature {
+    flex-basis: calc((100% - 72px) / 4);
     margin-right: 24px;
 }
 
@@ -213,6 +215,8 @@ img {
 
 .job {
     margin-right: 24px;
+    flex-basis: calc((100% - 48px) / 3);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .job:last-child {
@@ -273,19 +277,20 @@ img {
 .site-footer {
     background-color: var(--dark);
     color: var(--light);
+    padding: 100px 0;
 }
 
 .footer-span {
     color: var(--light);
 }
 
-.site-footer.container {
-    padding: 100px 0;
+.footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
-    width: 264px;
-    margin-top: 16px;
+    max-width: 264px;
 }
 
 
