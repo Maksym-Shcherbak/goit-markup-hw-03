@@ -19,6 +19,15 @@ body {
     background-color: var(--white-background);
 }
 
+.container {
+    width: 1158px;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+
 .list {
     list-style: none;
 }
