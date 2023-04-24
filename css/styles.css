@@ -210,15 +210,11 @@ img {
 
 .features {
   display: flex;
+  gap: 24px;
 }
 
 .feature {
   flex-basis: calc((100% - 72px) / 4);
-  margin-right: 24px;
-}
-
-.feature:last-child {
-  margin-right: 0;
 }
 
 .feature-title {
@@ -235,13 +231,9 @@ img {
 }
 
 .job {
-  margin-right: 24px;
+  gap: 24px;
   flex-basis: calc((100% - 48px) / 3);
   border-radius: 0px 0px 4px 4px;
-}
-
-.job:last-child {
-  margin-right: 0;
 }
 
 .our-job-title {
