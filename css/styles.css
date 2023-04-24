@@ -81,6 +81,10 @@ img {
   justify-content: space-between;
 }
 
+.site-header .container {
+  border-bottom: none;
+}
+
 .header-navigation {
   display: flex;
   align-items: center;
@@ -89,6 +93,10 @@ img {
 .menu {
   display: flex;
   gap: 40px;
+}
+
+.menu-item {
+  padding: 24px 0;
 }
 
 .contacts {
@@ -120,7 +128,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding: 24px 0;
 }
 
 .address {
