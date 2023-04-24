@@ -95,10 +95,6 @@ img {
   gap: 40px;
 }
 
-.menu-item {
-  padding: 24px 0;
-}
-
 .contacts {
   display: flex;
   gap: 40px;
@@ -128,6 +124,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  display: block;
+  padding: 24px 0;
 }
 
 .address {
