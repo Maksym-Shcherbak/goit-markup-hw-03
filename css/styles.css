@@ -88,28 +88,12 @@ img {
 
 .menu {
   display: flex;
-  padding: 0;
-}
-
-.menu-item {
-  margin-right: 40px;
-  padding: 24px 0;
-}
-
-.menu-item:last-child {
-  margin-right: 0;
+  gap: 40px;
 }
 
 .contacts {
   display: flex;
-}
-
-.contact-item {
-  margin-right: 40px;
-}
-
-.contact-item:last-child {
-  margin-right: 0;
+  gap: 40px;
 }
 
 .logo {
@@ -136,6 +120,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  padding: 24px 0;
 }
 
 .address {
@@ -185,7 +170,7 @@ img {
 }
 
 .order-button {
-  min-width: 170px;
+  min-width: 169px;
   height: 56px;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -228,10 +213,10 @@ img {
 
 .jobs {
   display: flex;
+  gap: 24px;
 }
 
 .job {
-  gap: 24px;
   flex-basis: calc((100% - 48px) / 3);
   border-radius: 0px 0px 4px 4px;
 }
@@ -347,7 +332,7 @@ img {
 }
 
 .project {
-  flex-basis: calc(100% / 3 - 48px);
+  width: calc((100% - 48px) / 3);
 }
 
 .bordered {
